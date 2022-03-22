@@ -1,0 +1,41 @@
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px ;
+}
+.jobCard{
+    border: 2px solid rgb(99, 99, 99);
+    padding: 10px;
+    margin: 20px 0;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+    align-items: center;
+}
+.jobCard *{
+    direction: rtl;
+}
+.cardBtns{
+    border-right: 2px solid rgb(99, 99, 99);
+}
+.cardBtns button{
+    /* background-color: #2ECC71; */
+    margin: 5px 0;
+    width: 100%;
+}
+.jobCard p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row{
+    justify-content: space-around;
+}
+@media screen and ( max-width:768px ) {
+    .cardBtns{
+        border-right: 0px solid rgb(99, 99, 99);
+        border-top: 2px solid rgb(99, 99, 99);
+    }
+}

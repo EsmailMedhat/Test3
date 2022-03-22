@@ -1,0 +1,21 @@
+<header>
+    <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-11 firstHead">
+            <h2>Help me!</h2>
+            <a><i class="far fa-comments navbar-text listItem"></i></a>
+            <a><i class="fas fa-bell navbar-text listItem"></i></a>
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-11">
+          <a class="listItem" *ngIf="isLogin() == false">عنا</a>
+            <a class="listItem" *ngIf="isLogin() == true" routerLink="/home">الرئيسيه</a>
+            <a class="listItem" *ngIf="isLogin() == true" routerLink="/profile">الشخصيه</a>
+            <a class="listItem" *ngIf="isLogin() == true">تواصل معنا</a>
+            <a class="listItem" *ngIf="isLogin() == true">تحديث الموقع</a>
+          <a class="listItem" *ngIf="isLogin() == false" routerLink="/login">تسجيل الدخول</a>
+          <a class="listItem" *ngIf="isLogin() == false" routerLink="/signup">انشاء حساب</a>
+          <a class="listItem" (click)="logOut()" *ngIf="isLogin() == true" routerLink="/signup">تسجيل الخروج</a>
+            <div class="options"><i id='list' (click)="send()" class="fas fa-list-alt optionsicon"></i></div>
+        </div>
+    </div>
+</header>
+

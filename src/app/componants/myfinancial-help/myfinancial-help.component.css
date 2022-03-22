@@ -1,0 +1,79 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    padding:30px 0;
+    margin-top: 100px;
+}
+.input-group{
+    direction:rtl;
+}
+.input-group *{
+    margin:5px;
+}
+div span{
+    background-color: #2ECC71;
+    color: white;
+}
+.jobCard{
+    border: 2px solid rgb(99, 99, 99);
+    padding: 20px 10px;
+    margin: 20px 0;
+    direction: rtl;
+    align-items: center;
+}
+.jobCard *{
+    direction: rtl;
+}
+.cardInfo{
+    border-left: 2px solid #636363;
+}
+.cardInfo span, .cardInfo input{
+    border: 1px solid #2ECC71;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+.in{
+    padding: 0;
+    margin: 5px;
+}
+select{
+    border: 1px solid #2ECC71;
+    border-radius: 5px;
+    margin: 0;
+}
+.cardInfo span{
+    border: 1px solid #636363;
+}
+.cardBtns button{
+    /* background-color: #2ECC71; */
+    margin: 10px 0;
+    width: 100%;
+}
+.jobCard p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.row{
+    justify-content: space-around;
+}
+h1{
+    margin-bottom: 50px;
+    text-align:center
+}
+@media screen and ( max-width:768px ) {
+    .cardInfo{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-left: 0px solid rgb(99, 99, 99);
+        border-bottom: 2px solid rgb(99, 99, 99);
+    }
+}
+svg{
+    margin-left: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

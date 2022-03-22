@@ -1,0 +1,82 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.row *{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.row{
+    justify-content: space-around;
+}
+form .row *{
+    direction: rtl;
+}
+form .row button{
+    width: 60%;
+    background-color: #2ECC71;
+}
+.spaceBeforeTheButton{
+    opacity: 0;
+}
+label{
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+}
+.break{
+    height: 3px;
+    background-color: rgb(99, 99, 99);
+}
+.pog{
+    margin: 60px 0;
+}
+.jobCard{
+    border: 2px solid rgb(99, 99, 99);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    direction: rtl;
+}
+.jobCard *{
+    direction: rtl;
+}
+.cardBtns{
+    border-right: 2px solid rgb(99, 99, 99);
+}
+.cardBtns button{
+    /* background-color: #2ECC71; */
+    width: 100%;
+}
+.jobCard p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.space{
+    height: 100px;
+}
+@media screen and ( max-width:768px ) {
+    .cardBtns{
+        border-right: 0px solid rgb(99, 99, 99);
+        border-top: 2px solid rgb(99, 99, 99);
+    }
+    .space{
+        height: 150px;
+    }
+}
+.fill-form{
+    border: 1px solid;
+}
+textarea{
+    resize: none;
+}
+#inputGroupSelect01{
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    height: 40px;
+}

@@ -1,0 +1,82 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.row *{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.row{
+    justify-content: space-between;
+}
+form .row *{
+    direction: rtl;
+}
+form .row button{
+    width: 100%;
+    background-color: #2ECC71;
+}
+.sp{
+    opacity: 0;
+}
+label{
+    font-weight: bold;
+    font-size: large;
+}
+.spaceBetween{
+    height: 4px;
+    background-color: #2ECC71;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.offerCard{
+    border: 3px solid #2ECC71;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    direction: rtl;
+}
+.offerCard *{
+    direction: rtl;
+}
+.cardBtns{
+    border-right: 3px solid #2ECC71;
+}
+.cardBtns button{
+    /* background-color: #2ECC71; */
+    width: 100%;
+}
+.offerCard p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.name{
+    font-weight: bold;
+}
+p{
+    font-size: 19px;
+}
+
+@media screen and ( max-width:768px ) {
+    .cardBtns{
+        border-right: 0px solid rgb(99, 99, 99);
+        border-top: 2px solid #636363;
+    }
+    .things{
+        justify-content: center;
+    }
+    .things dev{
+        margin: 0;
+        padding: 0;
+    }
+
+}

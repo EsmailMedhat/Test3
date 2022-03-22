@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row space">
+    <div class="col-lg-12">
+    </div>
+  </div>
+  <h1>طلب اعلان الوظيفي</h1>
+  <div class="row jobCard">
+    <div class="col-md-9 cardInfo">
+      <input type=hidden value="{{newJob.id}}" aria-label="First name bb dis" class="form-control" [disabled]="block">
+      <div class="input-group">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-person-video2" viewBox="0 0 16 16">
+            <path d="M10 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+            <path
+              d="M2 1a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2ZM1 3a1 1 0 0 1 1-1h2v2H1V3Zm4 10V2h9a1 1 0 0 1 1 1v9c0 .285-.12.543-.31.725C14.15 11.494 12.822 10 10 10c-3.037 0-4.345 1.73-4.798 3H5Zm-4-2h3v2H2a1 1 0 0 1-1-1v-1Zm3-1H1V8h3v2Zm0-3H1V5h3v2Z" />
+          </svg> المؤهل</span>
+        <!-- <select class="custom-select" [(ngModel)]="newJob.qualification" value="{{newJob.qualification}}" [disabled]="block"
+                id="inputGroupSelect01">
+                <option value="بكالورويوس">بكالورويوس</option>
+                <option value="دبلومة">دبلومة</option>
+                <option value=" ماجستير"> ماجستير</option>
+                <option value="دكتوراة"> دكتوراة</option>
+                <option value="اخري">اخري</option>
+              </select> -->
+        <input type="text" [(ngModel)]="newJob.qualification" value="{{newJob.qualification}}"
+          aria-label="First name bb dis" class="form-control" [disabled]="block">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+            <path
+              d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+          </svg> الشهادات </span>
+        <input type="text" aria-label="First name bb dis" [(ngModel)]="newJob.certificates" class="form-control"
+          value="{{newJob.certificates}}" [disabled]="block">
+      </div>
+      <!--              <div class="input-group">
+                <span class="input-group-text">المهارات</span>
+                <input type="text" value="{{temp}}" aria-label="First name bb dis" class="form-control" value='الكتابه السريعه'>
+              </div>-->
+      <div class="input-group">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+          </svg> نبزه عنك </span>
+        <input type="text" value="{{newJob.summary_about_you}}" [(ngModel)]="newJob.summary_about_you"
+          aria-label="First name bb dis" class="form-control" value='ممكنة اشتغل تحت الضغط' [disabled]="block">
+      </div>
+      <div class="input-group">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+            <path
+              d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+          </svg> صور الشهادات </span>
+        <input type="file" aria-label="First name bb dis" class="form-control" [disabled]="block">
+      </div>
+      <img id="needJopAttach" src="{{newJob.attach}}" alt="att">
+    </div>
+    <div class="col-md-3 lll">
+      <div class="row cardBtns">
+        <div class="col-md-11 col-4"><button (click)="enableInputs()" type="button" class="btn btn-primary"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+              <path fill-rule="evenodd"
+                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+            </svg> تعديل</button></div>
+        <div class="col-md-11 col-4"><button (click)="update()" type="button" class="btn btn-success"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save2-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+            </svg> حفظ</button></div>
+        <div class="col-md-11 col-4"><button (click)="delete()" type="button" class="btn btn-danger"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+            </svg> حذف</button></div>
+      </div>
+    </div>
+  </div>
+</div>

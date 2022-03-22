@@ -1,0 +1,28 @@
+<div class="main">
+
+  <div class="container">
+    <div class="booking-content">
+      <div class="booking-image">
+        <img class="booking-img" src="../../../assets/images/form-img.jpg" alt="Booking Image">
+      </div>
+      <div class="booking-form">
+        <form class="fo" id="booking-form">
+          <h2>LogIn</h2>
+          <div class="form-group form-input">
+            <input [(ngModel)]="email" type="text" name="name" id="Phone" value="" required/>
+            <label for="Phone" class="form-label">Phone</label>
+          </div>
+          <div class="form-group form-input">
+            <input [(ngModel)]="password" type="password" name="phone" id="password" value="" required/>
+            <label for="password" class="form-label">Password</label>
+          </div>
+
+          <div class="form-submit">
+              <input type="submit" (click)="login()" value="LogIn" class="submit"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

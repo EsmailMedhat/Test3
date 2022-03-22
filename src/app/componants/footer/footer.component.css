@@ -1,0 +1,71 @@
+/* *{
+    font-family: 'Times New Roman', Times, serif;
+} */
+.row{
+    width: 100%;
+    color: cornsilk;
+    justify-content: space-around;
+}
+.contain{
+    width: 100%;
+    background-color:rgb(56, 56, 56);
+}
+.first{
+    width: 100%;
+}
+.handPic{
+    border: 5px solid white;
+    border-radius: 50%;
+    max-width: 80%;
+    margin: 40px 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    font-size: 30px;
+    margin:0;
+}
+.iq{
+    justify-content: center;
+    width: 100%;
+}
+.fas, .far{
+    margin: 10px;
+    font-size: 30px;
+}
+.separate{
+    height: 3px;
+    width: 60%;
+    background-color: white;
+}
+.hh{
+    margin: 10px;
+}
+.pp{
+    margin: 20px;
+    float: right;
+}
+.m{
+    margin: 20px 0;
+    width: 100%;
+}
+.fab{
+    margin-right: 10px;
+}
+@media screen and ( max-width: 1200px ) {
+    .pic{
+        display: none;
+    }
+}
+@media screen and ( max-width: 768px ) {
+    .content{
+        text-align: center;
+    }
+    .separate{
+        width: 40%;
+        margin: 10px auto ;
+    }
+}

@@ -1,0 +1,180 @@
+<nav class="b">
+  <div class="row space">
+    <div class="col-lg-12">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" id="title-container">
+      <span></span>
+      <span></span>
+      <div id="title" style="color: #0d0d0d;font-size: 17px;font-weight: bold">مفقودات قمت بأبلاغ عنها</div>
+    </div>
+    <div class="row mt-4">
+      <div class="container">
+        <div *ngFor="let temp of founds" class="row mt-2" style="background-color: white;">
+          <div class=" card">
+            <div class="card-body">
+              <!-- <div class="input-group" dir="ltr">
+                <input class="ena{{temp.id}}" type="text" [(ngModel)]="temp.type" value="{{temp.type}}"dir="rtl" placeholder="نوع الفقود" class="form-control" disabled>
+                <span class="input-group-text" id="basic-addon20"></span>
+              </div> -->
+
+              <div class="input-group" dir="rtl">
+                <!-- <input type="text" [(ngModel)]="found.type" dir="rtl" placeholder="نوع الفقود" class="form-control"> -->
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon20" dir="rtl"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-blockquote-left" viewBox="0 0 16 16">
+                    <path
+                      d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z" />
+                  </svg> نوع المفقود</span>
+                  <select class="custom-select ena{{temp.id}}" [(ngModel)]="temp.type" value="{{temp.type}}" disabled id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="هاتف">هاتف</option>
+                    <option value="أموال">أموال</option>
+                    <option value="مفاتيح">مفاتيح</option>
+                    <option value="كتب">كتب</option>
+                    <option value="ادوات كهرائية">ادوات كهرائية</option>
+                    <option value="ادوات منزلية">ادوات منزلية</option>
+                    <option value="تحف">تحف</option>
+                    <option value="اخري">اخري</option>
+                    <!-- <option value="nnn">nnn</option> -->
+                  </select>
+                </div>
+              </div>
+              <div class="input-group my-2" dir="rtl">
+                <div class="input-group">
+                  <span class="input-group-text" id="" dir="rtl"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                  </svg> اللون الاولي</span>
+                  <select class="custom-select ena{{temp.id}}" disabled [(ngModel)]="temp.first_color" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="ازرق">ازرق</option>
+                    <option value="اصفر">اصفر</option>
+                    <option value="بنفسجي">بنفسجي</option>
+                    <option value="اخضر">اخضر</option>
+                    <option value="احمر">احمر</option>
+                    <option value="برتقالي">برتقالي</option>
+                    <option value="اسود">اسود</option>
+                    <option value="اخري">اخري</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-group my-2" dir="rtl">
+
+                <div class="input-group">
+                  <span class="input-group-text" id="" dir="rtl"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07zM8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                  </svg> اللون الثانوي</span>
+                  <select class="custom-select ena{{temp.id}}" disabled [(ngModel)]="temp.second_color" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="ازرق">ازرق</option>
+                    <option value="اصفر">اصفر</option>
+                    <option value="بنفسجي">بنفسجي</option>
+                    <option value="اخضر">اخضر</option>
+                    <option value="احمر">احمر</option>
+                    <option value="برتقالي">برتقالي</option>
+                    <option value="اسود">اسود</option>
+                    <option value="اخري">اخري</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="input-group my-2" dir="rtl">
+                <div class="input-group">
+                  <span class="input-group-text" id="" dir="rtl"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
+                  </svg> الفئه</span>
+                  <select class="custom-select ena{{temp.id}}" disabled [(ngModel)]="temp.category" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="اموال">اموال</option>
+                    <option value="اجهزة كهربائية">اجهزة كهرائية</option>
+                    <option value="سمارت فون">سمارت فون</option>
+                    <option value="مستلزمات طبية">مستلزمات طبية</option>
+                    <option value="اطعمة">اطعمة</option>
+                    <option value="ذهب ومجوهرات">ذهب ومجوهرات</option>
+                    <option value="ملابس">ملابس</option>
+                    <option value="اخري">اخري</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-group my-2" dir="ltr">
+                <input class="ena{{temp.id}}" [(ngModel)]="temp.found_date" value="{{temp.found_date}}" type="datetime-local" dir="rtl" placeholder="تاريخ الفقد" class="form-control" disabled>
+                <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                </svg> تاريخ الفقد</span>
+              </div>
+              <div class="input-group my-2" dir="ltr">
+                <input class="ena{{temp.id}}" [(ngModel)]="temp.found_place" value="{{temp.found_place}}" type="text" dir="rtl" placeholder="مكان الفقد" class="form-control" disabled>
+                <span class="input-group-text" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg> مكان الفقد</span>
+              </div>
+              <div class="input-group my-2" dir="ltr">
+                <textarea class="ena{{temp.id}}" [(ngModel)]="temp.description" value="{{temp.description}}" class="form-control" dir="rtl" placeholder="الوصف" disabled></textarea>
+                <span class="input-group-text" id="basic"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-list-columns-reverse" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z" />
+                </svg> الوصف</span>
+              </div>
+            
+              <div class="input-group my-2" dir="ltr">
+                <input class="ena{{temp.id}}" [(ngModel)]="temp.brand" type="text" value="{{temp.brand}}" dir="rtl" placeholder="الماركه" class="form-control" disabled>
+                <span class="input-group-text" id="ba"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                </svg> ماركة</span>
+              </div>
+              <div class="input-group my-2" dir="ltr">
+                <input class="ena{{temp.id}}" class="ena{{temp.id}}" type="file" id="file" dir="rtl" placeholder="صوره المفقود" class="form-control" disabled>
+              </div>
+              <div class="input-group my-2" dir="ltr">
+              <img src="{{temp.attach}}" alt="attach">
+              </div>
+              <div class="d-flex flex-row" dir="ltr">
+                <button class="btn btn-outline-danger" (click)="delete(temp.id)" style="margin-right: 15px ;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+                </svg> حذف </button>
+                <button class="btn btn-outline-success" (click)="update(temp)" style="margin-right: 15px ;"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save2-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2v-6z" />
+                </svg> حفظ </button>
+                <button (click)="enableInputs(temp.id)" class="btn btn-outline-primary"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                  <path fill-rule="evenodd"
+                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                </svg>  تعديل </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--
+
+-->

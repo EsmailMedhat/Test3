@@ -1,0 +1,11 @@
+div{
+    overflow: hidden;
+    width: 100%;
+}
+.contt{
+    overflow: hidden;
+    z-index: 1;
+}
+.mainComps{
+    z-index: 2;
+}

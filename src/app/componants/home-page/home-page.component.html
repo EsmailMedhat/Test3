@@ -1,0 +1,110 @@
+<div class="container-fluid begin">
+    <div class="row space">
+        <div class="col-lg-12">
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div id="listElements" class="col-lg-4 col-md-4 list">
+                <h2>Categories <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmarks" viewBox="0 0 16 16">
+                        <path
+                            d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z" />
+                        <path
+                            d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z" />
+                    </svg></h2>
+                <div *ngIf="w.innerWidth < 768" class="row exit">
+                    <i (click)="close()" class="col-12 fas fa-times-circle"></i>
+
+                </div>
+                <button type="button" (click)="toggleOne()" class="btn btn-primary">
+                    v قائمة طلبات المساعده الخاصه بى</button>
+                <div class="cons" id="FD">
+                    <a routerLink="/all-Lost">الابلاغ عن مفقودات</a>
+                    <a routerLink="/app-job">وظائف و اعمال</a>
+                    <a routerLink="/offer-thing-to-be-done">things to be done</a>
+                    <a routerLink="/financialHelpAsking">المساعدات الماليه</a>
+                </div>
+                <button type="button" (click)="toggleTwo()" class="btn btn-primary">v قائمه مقدمى الخدمات</button>
+                <div class="cons" id="SD">
+                    <a routerLink="/calling">قائمه المفقودات</a>
+                    <a routerLink="/offer-job">عرض وظيفه</a>
+                    <a routerLink="/ask-thing-to-be-done">things to be done</a>
+                    <a routerLink="/financialHelpGiving">المساعدات الماليه</a>
+                </div>
+            </div>
+            <!-- this is just to position the page right -->
+            <div class="col-lg-5 col-md-4">
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="createPost">
+                    <div class="row FFR">
+                        <div class="col-5">
+                            <h3>اسأل</h3>
+                        </div>
+                        <div class="col-5">
+                            <select [(ngModel)]="post.type" class="form-select" aria-label="Default select example">
+                                <option value="عامه" class="">عامه</option>
+                                <option value="الهندسه" class="">الهندسه</option>
+                                <option value="الطب" class="">الطب</option>
+                                <option value="الزراعه" class="">الزراعه</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea [(ngModel)]="post.content" class="postContent"
+                                placeholder="بماذا تفكر"></textarea>
+                        </div>
+                    </div>
+                    <div class="row LFR">
+                        <div class="col-3">
+                            <button (click)="posting()" type="button" class="btn btn-primary">ارسال</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row selectcatg">
+                    <div class="col-5">
+                        <h3>فئه البحث</h3>
+                    </div>
+                    <div class="col-5">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>عامه</option>
+                            <option value="1">الهندسه</option>
+                            <option value="2">الطب</option>
+                            <option value="3">الزراعه</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="post" *ngFor="let post of posts">
+                    <div class="row ">
+                        <div class="col-5">
+                            <p class="name"> <i class="fas fa-user-alt"></i> {{ post.name}} </p>
+                        </div>
+                        <div class="col-3">
+                            <p>{{ post.dateOfPost }} </p>
+                        </div>
+                        <div class="col-4 type">
+                            <p>الفئه : {{ post.type}}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row Content">
+                        <div class="col-12">
+                            <p>{{ post.content }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-8 col-sm-9 "></div>
+                        <div class="col-4 col-sm-3 col-md-3">
+                            <button type="button" class="btn btn-primary">تواصل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-0"></div>
+        </div>
+    </div>
+
+</div>
